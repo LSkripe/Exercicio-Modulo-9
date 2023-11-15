@@ -15,9 +15,9 @@ $(document).ready(function() {
         $(novoItem).appendTo('ul');
 
 
-        $('a').click(function(){
+        $('li').click(function(){
             console.log(novaAtividade);
-            $('<li style= "text-decoration: none"> </li>')
+            $('<li class="text-decoration:line-through"> </li>')
         });
 
         $('#atividade').val('');
