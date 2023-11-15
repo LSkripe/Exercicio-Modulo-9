@@ -1,0 +1,31 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    text-transform: uppercase;
+    margin-top: 10%;
+    margin-bottom: 20px;
+}
+
+header, form, ul{
+    text-align: center;
+}
+
+ul{
+    margin-top: 10px;
+}
+
+button, input{
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+a {
+    cursor: pointer;
+    text-decoration:line-through
+}
