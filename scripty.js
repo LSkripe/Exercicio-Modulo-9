@@ -7,17 +7,15 @@ $(document).ready(function() {
 
         const novoItem = $('<li> </li>');
         $(`
-            <a class="concluido">
+            <a>
                 ${novaAtividade}
             </a>
         `).appendTo(novoItem);
 
-        $(novoItem).appendTo('ul');
+        $(novoItem).appendTo('#listaTarefas'); // seletor para #listaTarefas
 
-
-        $('li').click(function(){
-            console.log(novaAtividade);
-            $('<li class="text-decoration:line-through"> </li>')
+        $('#listaTarefas').on('click', 'li', function(){ // configuração do evento de click na atividade
+            $(this).toggleClass('concluido');
         });
 
         $('#atividade').val('');
